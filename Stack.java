@@ -22,4 +22,14 @@ public class Stack {
             stk[++top] = item;
         }
     }
+
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is underflow.");
+        } else {
+            for (int i = top; i >= 0; i--) {
+                System.out.println(stk[i]);
+            }
+        }
+    }
 }
